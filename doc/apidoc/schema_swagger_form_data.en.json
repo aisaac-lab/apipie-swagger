@@ -1,0 +1,64 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API Document (params in:formData)",
+    "description": "\n<p>Another API description</p>\n",
+    "version": "public",
+    "x-copyright": null
+  },
+  "basePath": "",
+  "consumes": [
+    "application/x-www-form-urlencoded",
+    "multipart/form-data"
+  ],
+  "paths": {
+    "/todos": {
+      "get": {
+        "tags": [
+          "todos"
+        ],
+        "operationId": "get_todos",
+        "summary": "TODO一覧を返します",
+        "parameters": [
+
+        ],
+        "responses": {
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/todos/{id}": {
+      "get": {
+        "tags": [
+          "todos"
+        ],
+        "operationId": "get_todos_id",
+        "summary": "指定のIDのTODO情報を返します",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "string",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "Not Found"
+          },
+          "400": {
+            "description": "Invalid parameter"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+  },
+  "tags": [
+
+  ],
+  "host": "localhost:3000"
+}
