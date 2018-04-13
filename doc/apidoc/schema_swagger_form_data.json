@@ -1,12 +1,12 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "API Document (params in:formData)",
-    "description": "\n<p>Another API description</p>\n",
-    "version": "public",
+    "title": "freee API (params in:formData)",
+    "description": "\n<h2 id=\"\">はじめに</h2>\n\n<ol>\n<li>freeeにサインアップします。</li>\n\n<li>アプリケーション一覧から「新しいアプリケーションを登録」します。</li>\n\n<li>アプリケーションの登録が完了すると、AppIDとSecretが取得できます。</li>\n\n<li>ローカルの開発環境でテストする際は、認証用URLを直接リクエストしてAuthorization Codeを取得できます。</li>\n</ol>\n\n<p>アプリケーションの登録方法や認証方法、またはAPIの活用方法でご不明な点がある場合はヘルプセンターもご確認ください</p>\n<hr />\n<h2 id=\"_2\">仕様</h2>\n\n<h3 id=\"api\">APIエンドポイント</h3>\n\n<h3 id=\"_3\">認証</h3>\n\n<h3 id=\"_4\">エンドポイント</h3>\n\n<h3 id=\"_5\">リフレッシュ</h3>\n\n<h3 id=\"_6\">破棄</h3>\n\n<h3 id=\"_7\">データフォーマット</h3>\n\n<h3 id=\"_8\">共通エラーレスポンス</h3>\n<hr />\n<h2 id=\"_9\">連絡先</h2>\n\n<p>ご不明点、ご要望等は freee サポートデスクへのお問い合わせフォーム からご連絡ください。</p>\n",
+    "version": "1.0",
     "x-copyright": null
   },
-  "basePath": "",
+  "basePath": "https://api.freee.co.jp",
   "consumes": [
     "application/x-www-form-urlencoded",
     "multipart/form-data"

@@ -1,5 +1,32 @@
 class TodosController < ApplicationController
+  include Swagger::Blocks
+
   before_action :set_todo, only: [:show, :update, :destroy]
+
+  swagger_path '/todos' do
+
+    operation :get do
+      key :description, 'Get all todos'
+      key :operationId, :find_todos
+
+      response 200 do
+        key :description, 'Todos'
+        schema do
+          key :required, [:id, :title, :created_by]
+          property :id do
+            key :type, :integer
+            key :format, :int64
+          end
+          property :title do
+            key :type, :string
+          end
+          property :created_by do
+            key :type, :string
+          end
+        end
+      end
+    end
+  end
 
   api :GET, '/todos', 'TODO一覧を返します'
   error code: 404, desc: 'Not Found'
